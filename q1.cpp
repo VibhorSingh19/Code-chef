@@ -59,7 +59,7 @@ int main()
             
             
         
-        cout<<endl<<c1;
+        //cout<<endl<<c1;
     }
     
 
