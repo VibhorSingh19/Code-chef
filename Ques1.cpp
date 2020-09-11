@@ -11,39 +11,26 @@ int main()
     {
         long long n,c=0;
         cin>>n;
+        int freq[10]={0};
         long long arr[n];
         for(int i=0;i<n;i++)
         {
             cin>>arr[i];
         }
         sort(arr, arr+n);
-        for (int i = 0; i < n; i++) 
+        for(int i=0;i<n;i++)
         {
-            if(arr[i]!=0) 
-            {
-                int x=arr[i];
-            c++;    
-            
-          for (int j = i; j < n; j++) 
-        {
-            
-            //cout<<x;
-            arr[j]=arr[j]-x;
-            
-        } 
-        
-            }
+            freq[arr[i]]=1;
         }
-        cout<<c<<endl;
+        for(int i=1;i<=9;i++)
+        {
+            if(freq[i]==1)
+            c++;
+        }
+       cout<<c<<endl; 
         
+    } 
         
-    }
-             
-            
-            
-        
-        //cout<<endl<<c1;
-    }
-    
-
+}
+       
 
